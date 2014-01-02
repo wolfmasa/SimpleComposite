@@ -387,10 +387,27 @@ enum ADJUST_MODE {
 
 -(void)startPicker
 {
-    UIImagePickerController *picker = [UIImagePickerController new];
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    picker.delegate = self;
-    [self presentViewController:picker animated:YES completion:nil];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        // iPad
+        UIImagePickerController *imagePickerController;
+        imagePickerController = [UIImagePickerController new];
+        imagePickerController.delegate = self;
+        //ここまでは同じ
+        /**
+        //UIImagePickerControllerの入ったUIPopoverControllerを作成する方法
+        popoverController = [[UIPopoverController alloc] initWithContentViewController:imagePickerController];
+        
+        //UIPopoverControllerを表示する方法
+        [popoverController presentPopoverFromRect:[rightKakejiku bounds] inView:rightKakejiku permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+         **/
+    } else {
+        // それ以外
+        UIImagePickerController *picker = [UIImagePickerController new];
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        picker.delegate = self;
+        [self presentViewController:picker animated:YES completion:nil];
+    }
 }
 
 
