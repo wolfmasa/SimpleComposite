@@ -23,6 +23,11 @@
 		441C0F6618745A46008F2FA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 441C0F6418745A46008F2FA7 /* InfoPlist.strings */; };
 		441C0F6818745A46008F2FA7 /* SimpleCompositeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441C0F6718745A46008F2FA7 /* SimpleCompositeTests.m */; };
 		445EA0B2187534910021AC88 /* SCImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 445EA0B1187534910021AC88 /* SCImageManager.m */; };
+		445EA0B418753E400021AC88 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445EA0B318753E400021AC88 /* iAd.framework */; };
+		445EA0BA187548ED0021AC88 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445EA0B9187548ED0021AC88 /* Default@2x.png */; };
+		445EA0BC187549110021AC88 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445EA0BB187549110021AC88 /* Default-568h@2x.png */; };
+		445EA0BE18754AFA0021AC88 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445EA0BD18754AFA0021AC88 /* Icon-60@2x.png */; };
+		445EA0C018759C9A0021AC88 /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445EA0BF18759C9A0021AC88 /* Icon-Small-40@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		441C0F6718745A46008F2FA7 /* SimpleCompositeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCompositeTests.m; sourceTree = "<group>"; };
 		445EA0B0187534910021AC88 /* SCImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageManager.h; sourceTree = "<group>"; };
 		445EA0B1187534910021AC88 /* SCImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageManager.m; sourceTree = "<group>"; };
+		445EA0B318753E400021AC88 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		445EA0B9187548ED0021AC88 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		445EA0BB187549110021AC88 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		445EA0BD18754AFA0021AC88 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		445EA0BF18759C9A0021AC88 /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445EA0B418753E400021AC88 /* iAd.framework in Frameworks */,
 				441C0F3C18745A46008F2FA7 /* CoreGraphics.framework in Frameworks */,
 				441C0F3E18745A46008F2FA7 /* UIKit.framework in Frameworks */,
 				441C0F3A18745A46008F2FA7 /* Foundation.framework in Frameworks */,
@@ -106,6 +117,7 @@
 		441C0F3818745A46008F2FA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				445EA0B318753E400021AC88 /* iAd.framework */,
 				441C0F3918745A46008F2FA7 /* Foundation.framework */,
 				441C0F3B18745A46008F2FA7 /* CoreGraphics.framework */,
 				441C0F3D18745A46008F2FA7 /* UIKit.framework */,
@@ -117,6 +129,10 @@
 		441C0F3F18745A46008F2FA7 /* SimpleComposite */ = {
 			isa = PBXGroup;
 			children = (
+				445EA0BF18759C9A0021AC88 /* Icon-Small-40@2x.png */,
+				445EA0BD18754AFA0021AC88 /* Icon-60@2x.png */,
+				445EA0BB187549110021AC88 /* Default-568h@2x.png */,
+				445EA0B9187548ED0021AC88 /* Default@2x.png */,
 				441C0F4818745A46008F2FA7 /* SCAppDelegate.h */,
 				441C0F4918745A46008F2FA7 /* SCAppDelegate.m */,
 				441C0F4B18745A46008F2FA7 /* Main_iPhone.storyboard */,
@@ -237,9 +253,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				441C0F5018745A46008F2FA7 /* Main_iPad.storyboard in Resources */,
+				445EA0C018759C9A0021AC88 /* Icon-Small-40@2x.png in Resources */,
 				441C0F5518745A46008F2FA7 /* Images.xcassets in Resources */,
+				445EA0BA187548ED0021AC88 /* Default@2x.png in Resources */,
+				445EA0BE18754AFA0021AC88 /* Icon-60@2x.png in Resources */,
 				441C0F4D18745A46008F2FA7 /* Main_iPhone.storyboard in Resources */,
 				441C0F4418745A46008F2FA7 /* InfoPlist.strings in Resources */,
+				445EA0BC187549110021AC88 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@ enum ADJUST_MODE {
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-        
+    
     self.isDrag = false;
     self.progress.progress = 1.0;
     self.adjustMode = ADJUST_MODE_COMPOSITE;
