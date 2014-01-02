@@ -1,9 +1,9 @@
 //
 //  SCAppDelegate.h
-//  SimpleComposite
+//  CompositApp2
 //
-//  Created by 上原 将司 on 2014/01/01.
-//
+//  Created by ICP223G on 2014/01/02.
+//  Copyright (c) 2014年 ProjectSC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

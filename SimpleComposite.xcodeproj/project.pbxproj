@@ -22,6 +22,7 @@
 		441C0F5E18745A46008F2FA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441C0F3D18745A46008F2FA7 /* UIKit.framework */; };
 		441C0F6618745A46008F2FA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 441C0F6418745A46008F2FA7 /* InfoPlist.strings */; };
 		441C0F6818745A46008F2FA7 /* SimpleCompositeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441C0F6718745A46008F2FA7 /* SimpleCompositeTests.m */; };
+		445EA0B2187534910021AC88 /* SCImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 445EA0B1187534910021AC88 /* SCImageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		441C0F6318745A46008F2FA7 /* SimpleCompositeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleCompositeTests-Info.plist"; sourceTree = "<group>"; };
 		441C0F6518745A46008F2FA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		441C0F6718745A46008F2FA7 /* SimpleCompositeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCompositeTests.m; sourceTree = "<group>"; };
+		445EA0B0187534910021AC88 /* SCImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageManager.h; sourceTree = "<group>"; };
+		445EA0B1187534910021AC88 /* SCImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				441C0F5218745A46008F2FA7 /* SCViewController.m */,
 				441C0F5418745A46008F2FA7 /* Images.xcassets */,
 				441C0F4018745A46008F2FA7 /* Supporting Files */,
+				445EA0B0187534910021AC88 /* SCImageManager.h */,
+				445EA0B1187534910021AC88 /* SCImageManager.m */,
 			);
 			path = SimpleComposite;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				441C0F4A18745A46008F2FA7 /* SCAppDelegate.m in Sources */,
 				441C0F5318745A46008F2FA7 /* SCViewController.m in Sources */,
 				441C0F4618745A46008F2FA7 /* main.m in Sources */,
+				445EA0B2187534910021AC88 /* SCImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +480,7 @@
 				441C0F6D18745A46008F2FA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		441C0F6E18745A46008F2FA7 /* Build configuration list for PBXNativeTarget "SimpleCompositeTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				441C0F7018745A46008F2FA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
