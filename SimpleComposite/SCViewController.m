@@ -354,9 +354,22 @@ enum ADJUST_MODE {
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    NSLog(@"picker:%.2fx%.2f", image.size.width, image.size.height);
+    UIImage *image;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        // ユーザーの選択した写真を取得し、imageViewというUIImageView型のフィールドのイメージに設定する
+        image = [info objectForKey:UIImagePickerControllerOriginalImage];
+        
+        // UIPopoverControllerを閉じる
+        [self.imagePopController dismissPopoverAnimated:YES];
+    }
+    else
+    {
+        image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    }
+    
+    //NSLog(@"picker:%.2fx%.2f", image.size.width, image.size.height);
     
     if(self.openMode == 1)
     {
@@ -385,22 +398,34 @@ enum ADJUST_MODE {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)startPicker
+-(void)startPicker:(id)sender
 {
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         // iPad
-        UIImagePickerController *imagePickerController;
-        imagePickerController = [UIImagePickerController new];
-        imagePickerController.delegate = self;
-        //ここまでは同じ
-        /**
-        //UIImagePickerControllerの入ったUIPopoverControllerを作成する方法
-        popoverController = [[UIPopoverController alloc] initWithContentViewController:imagePickerController];
+        // PhotoLibraryが取得元として利用出来ない場合は、その後の処理は実行しない。
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary] == NO) {
+            // ここで何かしらの、失敗メッセージを出すとユーザーに優しい。
+            return;
+        }
         
-        //UIPopoverControllerを表示する方法
-        [popoverController presentPopoverFromRect:[rightKakejiku bounds] inView:rightKakejiku permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-         **/
+        // UIImagePickerControllerのインスタンスを作成して、
+        // 必要な入手元の設定や、delegateの設定を行う。
+        UIImagePickerController *imgPicker = [[UIImagePickerController alloc] init];
+        imgPicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        imgPicker.delegate = self;
+        
+        // 表示に使うPopoverのインスタンスを作成する。 imagePopControllerは、UIPopoverController型のフィールド変数。
+        // PopoverのコンテンツビューにImagePickerを指定する。
+        self.imagePopController = [[UIPopoverController alloc] initWithContentViewController:imgPicker];
+        
+        // Popoverを表示する。
+        // senderはBarButtonItem型の変数で、このボタンを起点にPopoverを開く。
+        //[self.imagePopController presentPopoverFromBarButtonItem:sender
+        //                          permittedArrowDirections:UIPopoverArrowDirectionAny
+        //                                           animated:YES];
+        UIView *b = (UIView*)sender;
+        [self.imagePopController presentPopoverFromRect:b.bounds inView:b permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     } else {
         // それ以外
         UIImagePickerController *picker = [UIImagePickerController new];
@@ -413,17 +438,17 @@ enum ADJUST_MODE {
 
 - (IBAction)openImage1:(id)sender {
     self.openMode=1;
-    [self startPicker];
+    [self startPicker:sender];
 }
 
 - (IBAction)openImage2:(id)sender {
     self.openMode =2;
-    [self startPicker];
+    [self startPicker:sender];
 }
 - (IBAction)nextImage:(id)sender {
     self.imageManager.image1 = self.imageManager.result;
     self.openMode = 2;
-    [self startPicker];
+    [self startPicker:sender];
 }
 
 #pragma mark iAd Delegate

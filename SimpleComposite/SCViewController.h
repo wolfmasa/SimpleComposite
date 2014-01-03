@@ -66,6 +66,9 @@
 
 @property (weak, nonatomic) IBOutlet ADBannerView *adBanner;
 
+//Picker View
+@property (nonatomic)UIPopoverController *imagePopController;
+
 -(void)updateImageView;
 
 @end
