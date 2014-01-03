@@ -28,6 +28,12 @@
 		445EA0BC187549110021AC88 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445EA0BB187549110021AC88 /* Default-568h@2x.png */; };
 		445EA0BE18754AFA0021AC88 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445EA0BD18754AFA0021AC88 /* Icon-60@2x.png */; };
 		445EA0C018759C9A0021AC88 /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445EA0BF18759C9A0021AC88 /* Icon-Small-40@2x.png */; };
+		446DEFFC18766A7600330998 /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = 446DEFFA18766A7600330998 /* 76.png */; };
+		446DEFFD18766A7600330998 /* 152.png in Resources */ = {isa = PBXBuildFile; fileRef = 446DEFFB18766A7600330998 /* 152.png */; };
+		446DEFFF18766ABB00330998 /* 58_iPhoneSpotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 446DEFFE18766ABB00330998 /* 58_iPhoneSpotlight.png */; };
+		446DF00318766B1400330998 /* 29_iPadSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 446DF00018766B1400330998 /* 29_iPadSetting.png */; };
+		446DF00418766B1400330998 /* 40_iPadSpotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 446DF00118766B1400330998 /* 40_iPadSpotlight.png */; };
+		446DF00518766B1400330998 /* 80_iPadSpotlight2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 446DF00218766B1400330998 /* 80_iPadSpotlight2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,12 @@
 		445EA0BB187549110021AC88 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		445EA0BD18754AFA0021AC88 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		445EA0BF18759C9A0021AC88 /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
+		446DEFFA18766A7600330998 /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76.png; sourceTree = "<group>"; };
+		446DEFFB18766A7600330998 /* 152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152.png; sourceTree = "<group>"; };
+		446DEFFE18766ABB00330998 /* 58_iPhoneSpotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58_iPhoneSpotlight.png; sourceTree = "<group>"; };
+		446DF00018766B1400330998 /* 29_iPadSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29_iPadSetting.png; sourceTree = "<group>"; };
+		446DF00118766B1400330998 /* 40_iPadSpotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40_iPadSpotlight.png; sourceTree = "<group>"; };
+		446DF00218766B1400330998 /* 80_iPadSpotlight2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80_iPadSpotlight2x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +141,12 @@
 		441C0F3F18745A46008F2FA7 /* SimpleComposite */ = {
 			isa = PBXGroup;
 			children = (
+				446DF00018766B1400330998 /* 29_iPadSetting.png */,
+				446DF00118766B1400330998 /* 40_iPadSpotlight.png */,
+				446DF00218766B1400330998 /* 80_iPadSpotlight2x.png */,
+				446DEFFE18766ABB00330998 /* 58_iPhoneSpotlight.png */,
+				446DEFFA18766A7600330998 /* 76.png */,
+				446DEFFB18766A7600330998 /* 152.png */,
 				445EA0BF18759C9A0021AC88 /* Icon-Small-40@2x.png */,
 				445EA0BD18754AFA0021AC88 /* Icon-60@2x.png */,
 				445EA0BB187549110021AC88 /* Default-568h@2x.png */,
@@ -223,6 +241,9 @@
 				CLASSPREFIX = SC;
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
+					441C0F3518745A46008F2FA7 = {
+						DevelopmentTeam = HUA9832AFD;
+					};
 					441C0F5918745A46008F2FA7 = {
 						TestTargetID = 441C0F3518745A46008F2FA7;
 					};
@@ -256,10 +277,16 @@
 				445EA0C018759C9A0021AC88 /* Icon-Small-40@2x.png in Resources */,
 				441C0F5518745A46008F2FA7 /* Images.xcassets in Resources */,
 				445EA0BA187548ED0021AC88 /* Default@2x.png in Resources */,
+				446DEFFD18766A7600330998 /* 152.png in Resources */,
 				445EA0BE18754AFA0021AC88 /* Icon-60@2x.png in Resources */,
+				446DEFFC18766A7600330998 /* 76.png in Resources */,
 				441C0F4D18745A46008F2FA7 /* Main_iPhone.storyboard in Resources */,
+				446DF00518766B1400330998 /* 80_iPadSpotlight2x.png in Resources */,
 				441C0F4418745A46008F2FA7 /* InfoPlist.strings in Resources */,
+				446DEFFF18766ABB00330998 /* 58_iPhoneSpotlight.png in Resources */,
 				445EA0BC187549110021AC88 /* Default-568h@2x.png in Resources */,
+				446DF00418766B1400330998 /* 40_iPadSpotlight.png in Resources */,
+				446DF00318766B1400330998 /* 29_iPadSetting.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleComposite/SimpleComposite-Prefix.pch";
 				INFOPLIST_FILE = "SimpleComposite/SimpleComposite-Info.plist";
@@ -431,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleComposite/SimpleComposite-Prefix.pch";
 				INFOPLIST_FILE = "SimpleComposite/SimpleComposite-Info.plist";
