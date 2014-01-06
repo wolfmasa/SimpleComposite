@@ -122,46 +122,46 @@ enum ImageComposit {
         bitOffsetGreen = 1;
         bitOffsetBlue = 2;
         bitOffsetAlpha = 3;
-        NSLog(@"RGBA");
+        //NSLog(@"RGBA");
     } else if (bitmapInfo == kCGImageAlphaPremultipliedFirst ||
                bitmapInfo == kCGImageAlphaFirst){
         bitOffsetRed = 1;
         bitOffsetGreen = 2;
         bitOffsetBlue = 3;
         bitOffsetAlpha = 0;
-        NSLog(@"ARGB");
+        //NSLog(@"ARGB");
     } else if (bitmapInfo == kCGImageAlphaNone ||
                bitmapInfo == kCGImageAlphaNoneSkipLast){
         bitOffsetRed = 0;
         bitOffsetGreen = 1;
         bitOffsetBlue = 2;
         bitOffsetAlpha = -1;
-        NSLog(@"RGB_");
+        //NSLog(@"RGB_");
     } else if (bitmapInfo == kCGImageAlphaNoneSkipFirst){
         bitOffsetRed = 1;
         bitOffsetGreen = 2;
         bitOffsetBlue = 3;
         bitOffsetAlpha = -1;
-        NSLog(@"_RGB");
+        //NSLog(@"_RGB");
     } else if (bitmapInfo == kCGImageAlphaOnly){
         bitOffsetRed = -1;
         bitOffsetGreen = -1;
         bitOffsetBlue = -1;
         bitOffsetAlpha = 0;
-        NSLog(@"A___");
+        //NSLog(@"A___");
     } else if (bitmapInfo == 8194){
         //iOS3.1.3や3.2とか
         bitOffsetRed = 0;
         bitOffsetGreen = 1;
         bitOffsetBlue = 2;
         bitOffsetAlpha = 3;
-        NSLog(@"RGBA");
+        //NSLog(@"RGBA");
     } else {
         bitOffsetRed = 0;
         bitOffsetGreen = 1;
         bitOffsetBlue = 2;
         bitOffsetAlpha = 3;
-        NSLog(@"RGBA");
+        //NSLog(@"RGBA");
     }
     
     offset[0] = bitOffsetRed;
@@ -245,8 +245,8 @@ enum ImageComposit {
         long buffSize =sizeof(UInt8)*img.size.width*img.size.height*4;
         UInt8 *buff = (UInt8 *)malloc(buffSize);
         
-        NSLog(@"Image1 %.2fx%.2f", self.image1.size.width, self.image1.size.height);
-        NSLog(@"Image2 %.2fx%.2f", self.image2.size.width, self.image2.size.height);
+        //NSLog(@"Image1 %.2fx%.2f", self.image1.size.width, self.image1.size.height);
+        //NSLog(@"Image2 %.2fx%.2f", self.image2.size.width, self.image2.size.height);
         
         // 画像処理
         int startPointX = floorf(self.startPoint.x);
