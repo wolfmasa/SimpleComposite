@@ -192,7 +192,6 @@ enum ADJUST_MODE {
             self.baseView.center = self.scrollView.center;
             [self.scrollView addSubview:self.baseView];
             [self.baseView addSubview:self.layerView];
-            
         }
         else
         {
